@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
 import Header from './Header';
 import Services from './Services';
 import FeaturedShots from './FeaturedShots';
@@ -9,7 +8,6 @@ import Testimonials from './Testimonials';
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <Header></Header>
             <Services></Services>
             <Stats></Stats>
