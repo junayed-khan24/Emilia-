@@ -3,26 +3,26 @@ import Hero from "../../src/assets/Heroo.jpg"
 
 const Header = () => {
   return (
-    <section className="bg-base-200 w-full min-h-screen pt-12">
+    <section className="bg-base-200 w-full min-h-screen pt-12 md:pt-24">
       <div className="max-w-7xl mx-auto px-4 py-10 lg:py-16">
         {/* Top Content */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
           
           {/* Left Title */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-base-content leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
             YOU,
             <br />
-            THROUGH MY <span className="text-black">LENS</span>
+            THROUGH MY <span className="text-secondary">LENS</span>
           </h1>
 
           {/* Right Text + Button */}
           <div className="lg:text-right max-w-md space-y-4">
-            <p className="text-sm md:text-base text-gray-600">
+            <p className="text-sm md:text-lg font-normal font-regular text-[#111111]">
               I help you see your life the way it deserves to be seen.
               Honest, Raw, Beautiful.
             </p>
 
-            <button className="btn btn-neutral rounded-xl px-8">
+            <button className="btn btn-primary bg-black text-white rounded-xl px-8">
               Book a session
             </button>
           </div>

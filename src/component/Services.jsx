@@ -29,13 +29,13 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-base-200 py-16">
+    <section className="bg-base-200 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         
         {/* Title */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">What I do</h2>
-          <p className="text-gray-500 mt-3 max-w-md mx-auto">
+          <h2 className="text-3xl md:text-4xl font-normal font-regular">What I do</h2>
+          <p className="mb-14 max-w-2xl mx-auto  text-1xl md:text-2xl font-normal text-neutral mt-0 md:mt-4">
             Turning everyday moments into lasting art. One frame at a time.
           </p>
         </div>
@@ -57,7 +57,7 @@ const Services = () => {
                 />
               </figure>
 
-              <div className="card-body p-4 text-center">
+              <div className="card-body p-4 text-center text-secondary">
                 <h3 className="font-medium text-sm md:text-base">
                   {service.title}
                 </h3>

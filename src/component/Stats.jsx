@@ -1,16 +1,17 @@
 import React from "react";
+import img from "../../src/assets/projectimg.jfif"
 
 const Stats = () => {
   return (
-    <section className="bg-base-200 py-20">
+    <section className="bg-[#F5F5F5] py-20">
       <div className="max-w-6xl mx-auto px-4 text-center">
 
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+        <h2 className="text-3xl md:text-4xl font-regular font-normal mb-2">
           My stats
         </h2>
 
-        <p className="text-gray-500 mb-14 max-w-md mx-auto">
+        <p className=" mb-14 max-w-2xl mx-auto  text-1xl md:text-2xl font-normal text-neutral mt-0 md:mt-4">
           Every photo tells a story. These numbers show my commitment to
           capturing them well.
         </p>
@@ -20,11 +21,14 @@ const Stats = () => {
 
           {/* LEFT BIG CARD */}
           <div className="bg-base-100 rounded-2xl shadow-md flex flex-col justify-center items-center p-14 hover:shadow-xl transition">
-            <h3 className="text-5xl md:text-6xl font-bold mb-4">
+            <h3 className="text-5xl md:text-7xl font-medium mb-8">
               200+
             </h3>
-            <p className="text-gray-500 text-sm">
-              Projects <br /> Completed
+            <div>
+            <img src={img} alt="Project" className="w-full h-48 object-cover rounded-xl hover:scale-105 transition " />
+            </div>
+            <p className="text-xl md:text-2xl text-[#575757] font-normal mt-12">
+              Projects <br className="" /> Completed
             </p>
           </div>
 
@@ -32,21 +36,21 @@ const Stats = () => {
           <div className="flex flex-col gap-6">
 
             {/* TOP DARK */}
-            <div className="bg-neutral text-neutral-content rounded-2xl p-12 shadow-lg flex flex-col justify-center items-center hover:scale-105 transition">
-              <h3 className="text-5xl font-bold mb-2">
+            <div className="font-semibold bg-gradient-to-r from-[#373737]  to-[#000000] text-neutral-content rounded-2xl p-12 shadow-lg flex flex-col justify-center items-center hover:scale-105 transition">
+              <h3 className="text-5xl md:text-7xl font-medium text-white mb-2">
                 6+ yrs
               </h3>
-              <p className="text-sm opacity-80">
+              <p className="text-xl md:text-2xl text-[#B9B9B9] font-normal mt-12">
                 Behind the lens
               </p>
             </div>
 
             {/* BOTTOM LIGHT */}
             <div className="bg-base-100 rounded-2xl shadow-md p-12 flex flex-col justify-center items-center hover:shadow-xl transition">
-              <h3 className="text-5xl font-bold mb-2">
+              <h3 className="text-5xl md:text-7xl font-medium mb-2">
                 100%
               </h3>
-              <p className="text-gray-500 text-sm">
+              <p className="text-xl md:text-2xl text-[#575757] font-normal mt-12">
                 Client satisfaction
               </p>
             </div>

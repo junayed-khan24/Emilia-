@@ -29,11 +29,11 @@ const Testimonials = () => {
 
         {/* Title */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-3">
+          <h2 className="text-2xl md:text-4xl font-normal font-regular mb-3 text-[#000000]">
             Hear from my past clients
           </h2>
 
-          <p className="text-gray-500 max-w-md mx-auto">
+          <p className="text-secondary text-center font-regular font-normal text-sm md:text-xl sm:text-lg mb-10 ">
             Real people, real stories. Spreading excellence with every shot.
           </p>
         </div>
@@ -44,21 +44,21 @@ const Testimonials = () => {
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="bg-base-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between min-h-[200px]"
+              className="bg-base-100 rounded-2xl border border-gray-200 p-8 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between min-h-[200px]"
             >
               {/* Quote */}
-              <p className="text-gray-700 text-sm md:text-base mb-8 leading-relaxed">
+              <p className="text-[#000000] text-sm md:text-base mb-8 leading-relaxed font-medium">
                 “{item.text}”
               </p>
 
               {/* User */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 ">
                 <img
                   src={item.img}
                   alt={item.name}
                   className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
                 />
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-[#585858]">
                   {item.name}
                 </span>
               </div>

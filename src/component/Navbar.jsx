@@ -1,129 +1,73 @@
 import React, { useState } from "react";
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navClass = ({ isActive }) =>
+    isActive ? "nav-link active" : "nav-link";
+
   return (
-    <nav className="bg-white shadow-md fixed py-2 w-full z-50">
+    <nav className="bg-white shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+
+        <div className="flex justify-between items-center h-16">
+
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-2xl font-bold text-gray-600">
-             Emilia
-            </Link>
-          </div>
+          <NavLink to="/" className="text-3xl font-regular font-normal text-black">
+            Emilia
+          </NavLink>
+
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center text-1xl font-bold">
-            <Link to="/" className="text-gray-700 hover:text-gray-600">
-              Home
-            </Link>
-            <Link to="/about" className="text-gray-700 hover:text-gray-600">
-              About
-            </Link>
-             <Link
-              to="/contact"
-              className="text-gray-700 hover:text-gray-600"
-            >
-              Portfolio
-            </Link>
-            <Link
-              to="/blog"
-              className="text-gray-700 hover:text-gray-600"
-            >
-                Blog
-            </Link>
-            <Link
-              to="/contact"
-              className="text-gray-700 hover:text-gray-600"
-            >
-              Contact
-            </Link>
-            {/* <div className="flex justify-center items-center gap-2 text-gray-700 text-xl">
-              <FaPhoneAlt size={24}></FaPhoneAlt>
-              01947003003
-            </div> */}
+          <div className="hidden md:flex space-x-8 items-center text-lg font-normal font-regular">
+            <NavLink to="/" end className={navClass}>Home</NavLink>
+            <NavLink to="/about" className={navClass}>About</NavLink>
+            <NavLink to="/portfolio" className={navClass}>Portfolio</NavLink>
+            <NavLink to="/blog" className={navClass}>Blog</NavLink>
+            <NavLink to="/contact" className={navClass}>Contact</NavLink>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-gray-600 focus:outline-none"
-            >
+
+          {/* Mobile Toggle */}
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? (
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <span className="text-2xl">✕</span>
               ) : (
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                <span className="text-2xl">☰</span>
               )}
             </button>
           </div>
+
         </div>
       </div>
 
+
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-2 pt-2 pb-3 space-y-1 shadow-md">
-          <Link
-            to="/"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600"
-            onClick={() => setIsOpen(false)}
-          >
+        <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-3 text-center">
+
+          <NavLink to="/" end className={navClass} onClick={() => setIsOpen(false)}>
             Home
-          </Link>
-          <Link
-            to="/about"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600"
-            onClick={() => setIsOpen(false)}
-          >
+          </NavLink>
+
+          <NavLink to="/about" className={navClass} onClick={() => setIsOpen(false)}>
             About
-          </Link>
-          <Link
-            to="/blog"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600"
-            onClick={() => setIsOpen(false)}
-          >
+          </NavLink>
+
+          <NavLink to="/portfolio" className={navClass} onClick={() => setIsOpen(false)}>
+            Portfolio
+          </NavLink>
+
+          <NavLink to="/blog" className={navClass} onClick={() => setIsOpen(false)}>
             Blog
-          </Link>
-          <Link
-            to="/contact"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600"
-            onClick={() => setIsOpen(false)}
-          >
+          </NavLink>
+
+          <NavLink to="/contact" className={navClass} onClick={() => setIsOpen(false)}>
             Contact
-          </Link>
-           <div className="flex justify-center items-center gap-2 text-red-700 text-xl my-8 ">
-              <FaPhoneAlt size={24}></FaPhoneAlt>
-              01947003003
-            </div>
+          </NavLink>
+
         </div>
       )}
     </nav>

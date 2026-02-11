@@ -7,6 +7,8 @@ import router from './router/Router.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <div className='poppins-thin'>
     <RouterProvider router={router}></RouterProvider>
+    </div>
   </StrictMode>,
 )

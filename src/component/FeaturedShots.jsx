@@ -9,11 +9,11 @@ const FeaturedShots = () => {
     <section className="bg-base-200 py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+        <h2 className="text-3xl md:text-4xl font-regular font-normal mb-2">
           Featured shots
         </h2>
 
-        <p className="text-gray-500 mb-14">
+        <p className="mb-14 max-w-2xl mx-auto  text-1xl md:text-2xl font-normal text-neutral mt-0 md:mt-4">
           A quick glance at some of my best works.
         </p>
 
@@ -75,7 +75,7 @@ const FeaturedShots = () => {
 
         {/* Button */}
         <div className="mt-14">
-          <button className="btn btn-neutral rounded-xl px-10">
+          <button className="btn btn-neutral bg-black text-white rounded-xl px-10">
             View my portfolio
           </button>
         </div>
