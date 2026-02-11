@@ -69,13 +69,13 @@ const About = () => {
       <img
         src={img2}
         alt=""
-        className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        className="h-full w-full md:h-[600px] object-cover hover:scale-110 transition duration-500"
       />
     </div>
 
 
     {/* Middle stacked images */}
-    <div className="grid grid-rows-3 gap-5">
+    <div className="grid grid-rows-3 gap-5 md:h-[600px] ">
 
       <div className="overflow-hidden rounded-2xl">
         <img
@@ -95,7 +95,7 @@ const About = () => {
 
       <div className="overflow-hidden rounded-2xl">
         <img
-          src={img4}
+          src={img3}
           alt=""
           className="w-full h-full object-cover hover:scale-110 transition duration-500"
         />
