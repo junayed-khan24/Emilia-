@@ -1,6 +1,10 @@
 import React from "react";
 import img from "../../src/assets/Hero.jpg";
 import img1 from "../../src/assets/Heroo.jpg";
+import img2 from "../../src/assets/aboutimg1.png"
+import img3 from "../../src/assets/aboutimg2.png"
+import img4 from "../../src/assets/aboutimg3.png"
+import img5 from "../../src/assets/aboutimg4.png"
 
 const About = () => {
   return (
@@ -63,7 +67,7 @@ const About = () => {
     {/* Left big image */}
     <div className="overflow-hidden rounded-2xl">
       <img
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        src={img2}
         alt=""
         className="w-full h-full object-cover hover:scale-110 transition duration-500"
       />
@@ -75,7 +79,7 @@ const About = () => {
 
       <div className="overflow-hidden rounded-2xl">
         <img
-          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+          src={img3}
           alt=""
           className="w-full h-full object-cover hover:scale-110 transition duration-500"
         />
@@ -83,7 +87,7 @@ const About = () => {
 
       <div className="overflow-hidden rounded-2xl">
         <img
-          src="https://images.unsplash.com/photo-1522163182402-834f871fd851"
+          src={img4}
           alt=""
           className="w-full h-full object-cover hover:scale-110 transition duration-500"
         />
@@ -91,7 +95,7 @@ const About = () => {
 
       <div className="overflow-hidden rounded-2xl">
         <img
-          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+          src={img4}
           alt=""
           className="w-full h-full object-cover hover:scale-110 transition duration-500"
         />
@@ -102,7 +106,7 @@ const About = () => {
     {/* Right big image */}
     <div className="overflow-hidden rounded-2xl">
       <img
-        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+        src={img5}
         alt=""
         className="w-full h-full object-cover hover:scale-110 transition duration-500"
       />
