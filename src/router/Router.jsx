@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import Home from "../component/Home";
 import About from "../component/About";
 import Blog from "../component/Blog";
+import Contact from "../component/Contact";
 
 const router = createBrowserRouter ([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter ([
                 path: '/blog',
                 Component: Blog
             },
+            {
+                path: '/contact',
+                Component: Contact
+            }
         ]
 
     }

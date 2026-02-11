@@ -42,6 +42,75 @@ const About = () => {
 
         </div>
       </div>
+      <section className="bg-base-200 py-16 px-4 md:px-10 lg:px-20">
+
+  {/* Heading */}
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-semibold">
+      Behind the Lens
+    </h2>
+
+    <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+      When I'm not behind the camera, I'm hiking,
+      sipping coffee, or chasing sunsets.
+    </p>
+  </div>
+
+
+  {/* Gallery */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    {/* Left big image */}
+    <div className="overflow-hidden rounded-2xl">
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        alt=""
+        className="w-full h-full object-cover hover:scale-110 transition duration-500"
+      />
+    </div>
+
+
+    {/* Middle stacked images */}
+    <div className="grid grid-rows-3 gap-5">
+
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+          alt=""
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
+
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1522163182402-834f871fd851"
+          alt=""
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
+
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+          alt=""
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
+    </div>
+
+
+    {/* Right big image */}
+    <div className="overflow-hidden rounded-2xl">
+      <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+        alt=""
+        className="w-full h-full object-cover hover:scale-110 transition duration-500"
+      />
+    </div>
+
+  </div>
+</section>
+
     </div>
   );
 };

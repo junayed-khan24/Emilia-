@@ -1,8 +1,8 @@
 import React from "react";
-import img from "../../src/assets/service.jpg"
-import img1 from "../../src/assets/download.jfif"
-import img2 from "../../src/assets/download (1).jfif"
-import img3 from "../../src/assets/download (2).jfif"
+import img from "../../src/assets/service.jpg";
+import img1 from "../../src/assets/download.jfif";
+import img2 from "../../src/assets/download (1).jfif";
+import img3 from "../../src/assets/download (2).jfif";
 
 const services = [
   {
@@ -45,7 +45,9 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 ${service.rotate} hover:rotate-0`}
+              className={`card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 
+              ${service.rotate} hover:rotate-0 
+              ${index >= 2 ? "hidden sm:block" : ""}`}
             >
               <figure className="h-56 overflow-hidden">
                 <img
@@ -63,6 +65,7 @@ const Services = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
