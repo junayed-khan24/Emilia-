@@ -27,7 +27,7 @@
 
 
 
-
+/* default link */
 .nav-link {
   color: #6b7280;
   position: relative;
@@ -47,19 +47,21 @@
   transition: width 0.3s ease;
 }
 
-/* hover underline */
+/* hover */
+.nav-link:hover {
+  color: #000;
+}
+
 .nav-link:hover::after {
   width: 100%;
 }
 
-/* active route */
+/* active */
 .nav-link.active {
   color: #000;
   font-weight: 600;
 }
 
-/* active underline always visible */
 .nav-link.active::after {
   width: 100%;
 }
-
