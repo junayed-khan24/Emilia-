@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-base-200 flex items-center justify-center px-4 py-12 pt-20 md:pt-24">
-      <div className="w-full max-w-xl bg-base-100 shadow-xl rounded-3xl p-8 md:p-12">
+      
+      <div
+        data-aos="zoom-in"
+        className="w-full max-w-xl bg-base-100 shadow-xl rounded-3xl p-8 md:p-12"
+      >
 
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-semibold text-center mb-10"
+        >
           Contact me
         </h2>
 
@@ -14,7 +32,7 @@ const Contact = () => {
         <form className="space-y-6">
 
           {/* Name */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="100">
             <input
               type="text"
               placeholder="Name here"
@@ -23,7 +41,7 @@ const Contact = () => {
           </div>
 
           {/* Email */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <input
               type="email"
               placeholder="Email Address"
@@ -32,7 +50,7 @@ const Contact = () => {
           </div>
 
           {/* Message */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="300">
             <textarea
               rows="5"
               placeholder="Write your message here"
@@ -42,6 +60,8 @@ const Contact = () => {
 
           {/* Button */}
           <button
+            data-aos="fade-up"
+            data-aos-delay="400"
             type="submit"
             className="
               btn w-full rounded-full
@@ -55,13 +75,18 @@ const Contact = () => {
         </form>
 
         {/* Footer Email */}
-        <p className="text-left mt-8 text-sm text-gray-500">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="500"
+          className="text-left mt-8 text-sm text-secondary font-normal font-regular"
+        >
           Or you can mail me at
           <br />
-          <span className="font-semibold text-2xl text-black underline">
+          <span className="font-regular font-normal text-2xl text-black underline">
             hello@templateemail.com
           </span>
         </p>
+
       </div>
     </div>
   );
