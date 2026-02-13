@@ -7,11 +7,22 @@ const Portfolio = () => {
             <h2 className="text-3xl font-normal text-center py-16">Portfolio</h2>
             <p className="text-center font-normal font-regular mb-8">A showcase of my recent photography work.</p>
           <div>
-            <div className='flex  gap-4 items-center justify-center'>
-                <img src={img} alt="Portfolio 1" className="rounded-lg shadow-md w-full md:w-[340px] h-full object-cover" />
-                <img src={img} alt="Portfolio 2" className="rounded-lg shadow-md w-full md:w-[540px] h-full object-cover" />
-                <img src={img} alt="Portfolio 3" className="rounded-lg shadow-md w-full md:w-[340px] h-full md:h-[412px] object-cover" />
+            <div className='md:flex  gap-3 items-center justify-center'>
+                <div className="overflow-hidden rounded-2xl">
+                     <img src={img} alt="Portfolio 2" className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] h-full object-cover hidden   md:block hover:scale-110 transition duration-300" />
+                </div>
+               
+                <div className="overflow-hidden rounded-2xl">
+                     <img src={img} alt="Portfolio 2" className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] h-full object-cover hidden   md:block hover:scale-110 transition duration-300" />
+                </div>        
+                <div className="overflow-hidden rounded-2xl">
+                    <img src={img} alt="Portfolio 3" className="rounded-lg shadow-md w-full  md:w-[288px] h-full md:h-[412px] object-cover hover:scale-110 transition duration-300" />
+                </div>
 
+            </div>
+            <div className='flex gap-3 mt-3 items-center justify-center'>
+                <img src={img} alt="Portfolio 4" className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] h-full object-cover hover:scale-110 transition duration-300" />
+                <img src={img} alt="Portfolio 5" className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] h-full object-cover md:block hidden hover:scale-110 transition duration-300" />
             </div>
             <div>
 
