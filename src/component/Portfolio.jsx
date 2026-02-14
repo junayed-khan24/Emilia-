@@ -81,7 +81,7 @@ const Portfolio = () => {
           </div>
 
           {/* Nature Photography */}
-               <h2 className="text-2xl font-normal text-center py-8">Nature Photography</h2>
+               
           <div>
             <div className='md:flex  gap-3 items-center justify-center'>
                 <div className="overflow-hidden rounded-2xl">
