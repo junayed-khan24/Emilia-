@@ -23,7 +23,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <NavLink to="/" className="text-3xl font-normal text-black">
-            Emilia
+            Emilia Rose
           </NavLink>
 
           {/* Desktop Menu */}

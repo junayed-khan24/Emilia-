@@ -12,7 +12,7 @@ const Footer = () => {
           {/* LEFT SIDE */}
           <div>
             <h2 className="text-3xl md:text-5xl font-semibold tracking-wide">
-              Moses Blake
+              Emilia Rose
             </h2>
             <p className="text-gray-400 mt-2 text-lg">
               Digital Photographer
@@ -50,7 +50,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-14 pt-6 text-center text-gray-500 text-sm">
-          Copyright © 2024. All rights reserved
+           © 2026 Emilia Rose. All rights reserved
         </div>
 
       </div>

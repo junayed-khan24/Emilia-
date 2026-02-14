@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import img from "../../src/assets/Emilia.jfif"
 import img1 from "../../src/assets/Heroo.jpg";
 import img2 from "../../src/assets/aboutimg1.png";
 import img3 from "../../src/assets/aboutimg2.png";
@@ -28,7 +29,7 @@ const About = () => {
           data-aos="fade-right"
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
         >
-          <span className="text-primary">I’M</span> MOSES BLAKE
+          <span className="text-primary">I’M</span> EMILIA ROSE
         </h2>
 
         <p
@@ -43,7 +44,7 @@ const About = () => {
           
           <img
             data-aos="zoom-in"
-            src={img1}
+            src={img}
             alt=""
             className="w-full h-64 sm:h-80 md:h-full object-cover rounded-2xl shadow-xl"
           />
