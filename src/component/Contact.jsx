@@ -83,7 +83,7 @@ const Contact = () => {
           Or you can mail me at
           <br />
           <span className="font-regular font-normal text-2xl text-black underline">
-            hello@templateemail.com
+            hello@emiliarose.com
           </span>
         </p>
 
