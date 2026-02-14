@@ -3,6 +3,7 @@ import React from "react";
 import leftImg from "../../src/assets/download.jfif";
 import middleImg from "../../src/assets/download (1).jfif";
 import rightImg from "../../src/assets/download (2).jfif";
+import { Link } from "react-router";
 
 const FeaturedShots = () => {
   return (
@@ -74,11 +75,13 @@ const FeaturedShots = () => {
         </div>
 
         {/* Button */}
+       <Link to="/portfolio">
         <div className="mt-14">
           <button className="btn btn-neutral bg-black text-white rounded-xl px-10">
             View my portfolio
           </button>
         </div>
+       </Link>
       </div>
     </section>
   );
