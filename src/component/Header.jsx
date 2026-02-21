@@ -1,9 +1,10 @@
 import React from "react";
 import Hero from "../../src/assets/Heroo.jpg"
+import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <section className="bg-base-200 w-full min-h-screen pt-12 md:pt-24">
+    <section className="bg-base-200 w-full min-h-screen pt-12 md:pt-20">
       <div className="max-w-7xl mx-auto px-4 py-10 lg:py-16">
         {/* Top Content */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
@@ -22,9 +23,11 @@ const Header = () => {
               Honest, Raw, Beautiful.
             </p>
 
+        <Link to="/contact">
             <button className="btn btn-primary bg-black text-white rounded-xl px-8">
               Book a session
             </button>
+        </Link>
           </div>
         </div>
 
