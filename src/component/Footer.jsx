@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="grid grid-cols-2 gap-12  p-8">
+          <div className="grid grid-cols-2 gap-12  ">
 
             {/* Pages */}
             <div>
@@ -36,7 +36,7 @@ const Footer = () => {
               <Link to="/about">
                 <li className="hover:text-white cursor-pointer transition mb-2">About</li>
               </Link>
-              <Link to="/contact">
+              <Link to="/blog">
               <li className="hover:text-white cursor-pointer transition mb-2">Blog</li>
               </Link>
               <Link to="/contact">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 mt-14 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
            © 2026 Emilia Rose. All rights reserved
         </div>
 
