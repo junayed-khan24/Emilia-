@@ -68,7 +68,7 @@ const Portfolio = () => {
           <img
             src={port4}
             alt="Portfolio 4"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] object-cover hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] object-cover hidden md:block hover:scale-110 transition duration-300"
           />
         </div>
 
@@ -80,7 +80,7 @@ const Portfolio = () => {
           <img
             src={port5}
             alt="Portfolio 5"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] object-cover hidden md:block hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] object-cover  hover:scale-110 transition duration-300"
           />
         </div>
       </div>
@@ -154,7 +154,7 @@ const Portfolio = () => {
           <img
             src={nature4}
             alt="Nature 2"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover hidden md:block hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover hover:scale-110 transition duration-300"
           />
         </div>
 
@@ -162,7 +162,7 @@ const Portfolio = () => {
           <img
             src={nature3}
             alt="Nature 3"
-            className="rounded-lg shadow-md w-full md:w-[288px] md:h-[412px] object-cover hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:w-[288px] md:h-[412px] object-cover hidden md:block  hover:scale-110 transition duration-300"
           />
         </div>
       </div>
@@ -172,7 +172,7 @@ const Portfolio = () => {
           <img
             src={nature1}
             alt="Nature 4"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] object-cover hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] object-cover hidden md:block hover:scale-110 transition duration-300"
           />
         </div>
 
@@ -184,7 +184,7 @@ const Portfolio = () => {
           <img
             src={nature2}
             alt="Nature 5"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] object-cover hidden md:block hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] object-cover  hover:scale-110 transition duration-300"
           />
         </div>
       </div>
