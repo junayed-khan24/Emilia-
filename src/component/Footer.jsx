@@ -1,4 +1,5 @@
 import React from "react";
+import { Link,  } from "react-router";
 
 const Footer = () => {
   return (
@@ -20,17 +21,27 @@ const Footer = () => {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid grid-cols-2 gap-12  p-8">
 
             {/* Pages */}
             <div>
               <h3 className="font-semibold mb-4">Pages</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li className="hover:text-white cursor-pointer transition">Home</li>
-                <li className="hover:text-white cursor-pointer transition">Portfolio</li>
-                <li className="hover:text-white cursor-pointer transition">About</li>
-                <li className="hover:text-white cursor-pointer transition">Blog</li>
-                <li className="hover:text-white cursor-pointer transition">Contact</li>
+              <ul className="space-y-2 md:space-y-3 text-gray-400">
+               <Link to="/">
+                <li className="hover:text-white cursor-pointer transition mb-2">Home</li>
+               </Link>
+              <Link to="/portfolio">
+                <li className="hover:text-white cursor-pointer transition mb-2">Portfolio</li>
+              </Link>
+              <Link to="/about">
+                <li className="hover:text-white cursor-pointer transition mb-2">About</li>
+              </Link>
+              <Link to="/contact">
+              <li className="hover:text-white cursor-pointer transition mb-2">Blog</li>
+              </Link>
+              <Link to="/contact">
+              <li className="hover:text-white cursor-pointer transition mb-2">Contact</li>
+              </Link>
               </ul>
             </div>
 
