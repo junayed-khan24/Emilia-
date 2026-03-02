@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import emi from "../../src/assets/emi.png";
+import emi1 from "../../src/assets/emii.png";
+import emi2 from "../../src/assets/emiii.png";
 import img from "../../src/assets/Emilia.jfif"
 import img1 from "../../src/assets/Heroo.jpg";
 import img2 from "../../src/assets/aboutimg1.png";
@@ -54,12 +57,12 @@ const About = () => {
             className="grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 md:block hidden space-y-2"
           >
             <img
-              src={img2}
+              src={emi1}
               alt=""
               className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-xl"
             />
             <img
-              src={img6}
+              src={emi}
               alt=""
               className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-xl"
             />
@@ -98,19 +101,19 @@ const About = () => {
             {/* Overlapping Images */}
             <div
               data-aos="zoom-in-up"
-              className="relative flex justify-center md:justify-end"
+              className=" flex justify-center items-center "
             >
               <img
-                src={img8}
+                src={emi}
                 alt=""
-                className="w-52 md:w-60 lg:w-64 rounded-2xl shadow-xl rotate-[-6deg] absolute top-6 left-6 md:left-0 border-4 border-gray-300 hover:scale-105 transition"
+                className=" lg:w-full  shadow-xl  top-6 left-6 md:left-0 border-4 hover:scale-105 transition"
               />
 
-              <img
-                src={img8}
+              {/* <img
+                src={emi2}
                 alt=""
-                className="w-52 md:w-60 lg:w-68 rounded-2xl shadow-2xl rotate-[6deg] relative z-10 border-4 border-white hover:scale-105 transition"
-              />
+                className="w-52 md:w-60 lg:w-68 rounded-2xl shadow-2xl rotate-[6deg]  z-10 border-4 border-white hover:scale-105 transition"
+              /> */}
             </div>
           </div>
 
