@@ -41,7 +41,7 @@ const Testimonials = () => {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {testimonials.map((item, index) => (
+          {testimonials.map((item, index ) => (
             <div
               key={index}
               className="bg-base-100 rounded-2xl border border-gray-200 p-8 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between min-h-[200px]"

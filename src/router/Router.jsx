@@ -5,6 +5,7 @@ import About from "../component/About";
 import Blog from "../component/Blog";
 import Contact from "../component/Contact";
 import Portfolio from "../component/Portfolio";
+import Wedding from "../component/Wedding";
 
 const router = createBrowserRouter ([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter ([
             {
                 path: '/contact',
                 Component: Contact
+            },
+            {
+                path: '/wedding',
+                Component: Wedding
             }
         ]
 
