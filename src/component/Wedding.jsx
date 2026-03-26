@@ -52,7 +52,7 @@ const Wedding = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+        <div className="grid grid-cols-2  gap-3 md:gap-6 mt-10">
           <img src={couple2} className="rounded-xl" data-aos="fade-right" />
           <img src={couple3} className="rounded-xl" data-aos="fade-left" />
           <img src={couple4} className="rounded-xl" data-aos="fade-right" />
