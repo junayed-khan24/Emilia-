@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <section className="bg-base-200 w-full min-h-screen pt-12 md:pt-20">
+    <section className="bg-base-200 w-full  pt-12 md:pt-20 border">
       <div className="max-w-7xl mx-auto px-4 py-10 lg:py-16">
         {/* Top Content */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
