@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <section className="bg-base-200 w-full  pt-12 md:pt-20 border">
+    <section className="bg-base-200 w-full  pt-12 md:pt-20 ">
       <div className="max-w-7xl mx-auto px-4 py-10 lg:py-16">
         {/* Top Content */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
@@ -24,7 +24,7 @@ const Header = () => {
             </p>
 
         <Link to="/contact">
-            <button className="btn btn-primary bg-black text-white rounded-xl px-8">
+            <button className="btn btn-primary bg-black text-white rounded-xl px-8 hover:bg-[#333333] transition duration-300" >
               Book a session
             </button>
         </Link>

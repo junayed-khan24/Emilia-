@@ -77,7 +77,7 @@ const FeaturedShots = () => {
         {/* Button */}
        <Link to="/portfolio">
         <div className="mt-14">
-          <button className="btn btn-neutral bg-black text-white rounded-xl px-10">
+          <button className="btn btn-neutral bg-black text-white rounded-xl px-10n hover:bg-[#333333] transition duration-300">
             View my portfolio
           </button>
         </div>
