@@ -10,7 +10,7 @@ import couple4 from "../../src/assets/wedding1.jfif";
 import couple5 from "../../src/assets/wedding1.jfif";
 import couple6 from "../../src/assets/wedding1.jfif";
 
-const Wedding = () => {
+const Portrait = () => {
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -87,4 +87,4 @@ const Wedding = () => {
   );
 };
 
-export default Wedding;
+export default Portrait ;
