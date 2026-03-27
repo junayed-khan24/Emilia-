@@ -201,6 +201,11 @@ const Portfolio = () => {
           />
         </div>
       </div>
+      <Link to="/nature" className="flex justify-center mt-6">
+      <button className="bg-[#000000] text-[#ffffff] py-2 px-6 rounded-lg hover:bg-[#333333] transition duration-300">
+        View More
+      </button>
+      </Link>
 
       {/* Animal Photography */}
       <h2 className="text-2xl text-[#000000] md:text-4xl font-regular font-normal text-center py-8 mt-12">Animal Photography</h2>
