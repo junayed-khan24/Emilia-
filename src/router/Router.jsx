@@ -23,7 +23,7 @@ const router = createBrowserRouter ([
             },
             {
                 path: '/portfolio',
-                Component: Portfolio
+                Component: Portfolio,
             },
             {
                 path: '/blog',
