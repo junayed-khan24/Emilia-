@@ -3,12 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import hero from "../../src/assets/aboutimg3.png";
-import couple1 from "../../src/assets/wedding1.jfif";
-import couple2 from "../../src/assets/wedding1.jfif";
-import couple3 from "../../src/assets/wedding1.jfif";
-import couple4 from "../../src/assets/wedding1.jfif";
-import couple5 from "../../src/assets/wedding1.jfif";
-import couple6 from "../../src/assets/wedding1.jfif";
+import couple1 from "../../src/assets/Nature1.png";
+import couple2 from "../../src/assets/Nature2.jfif";
+import couple3 from "../../src/assets/Nature4.jfif";
+import couple4 from "../../src/assets/Nature3.jfif";
+import couple5 from "../../src/assets/Nature.jfif";
+import couple6 from "../../src/assets/Nature.jfif";
 
 const Nature = () => {
   useEffect(() => {
@@ -75,10 +75,10 @@ const Nature = () => {
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <img src={couple2} className="rounded-lg" />
-            <img src={couple3} className="rounded-lg" />
-            <img src={couple4} className="rounded-lg" />
-            <img src={couple5} className="rounded-lg" />
+            <img src={couple1} className="rounded-lg" />
+            <img src={couple1} className="rounded-lg" />
+            <img src={couple1} className="rounded-lg" />
+            <img src={couple1} className="rounded-lg" />
           </div>
         </div>
 
