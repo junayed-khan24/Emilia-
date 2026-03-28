@@ -8,7 +8,7 @@ import couple2 from "../../src/assets/Nature2.jfif";
 import couple3 from "../../src/assets/Nature4.jfif";
 import couple4 from "../../src/assets/Nature3.jfif";
 import couple5 from "../../src/assets/Nature.jfif";
-import couple6 from "../../src/assets/Nature.jfif";
+import couple6 from "../../src/assets/Nature1.png";
 
 const Nature = () => {
   useEffect(() => {
