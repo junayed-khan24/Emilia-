@@ -3,12 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import hero from "../../src/assets/aboutimg3.png";
-import couple1 from "../../src/assets/wedding1.jfif";
-import couple2 from "../../src/assets/wedding1.jfif";
-import couple3 from "../../src/assets/wedding1.jfif";
-import couple4 from "../../src/assets/wedding1.jfif";
-import couple5 from "../../src/assets/wedding1.jfif";
-import couple6 from "../../src/assets/wedding1.jfif";
+import couple1 from "../../src/assets/Portrait1.jpg";
+import couple2 from "../../src/assets/Portrait2.jpg";
+import couple3 from "../../src/assets/Portrait3.jpg";
+import couple4 from "../../src/assets/Portrait4.jfif";
+import couple5 from "../../src/assets/Portrait5.jfif";
+import couple6 from "../../src/assets/Portrait4.jfif";
 
 const Portrait = () => {
   useEffect(() => {
