@@ -50,7 +50,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="bg-base-200 py-20 px-4 md:px-10">
+    <section className="bg-base-200 py-24 px-4 md:px-10">
 
       {/* Title */}
       <div className="text-center mb-14">

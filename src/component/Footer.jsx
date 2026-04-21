@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-600 text-sm">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-800 text-sm">
            © 2026 Emilia Rose. All rights reserved
         </div>
 
