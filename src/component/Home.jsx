@@ -6,6 +6,7 @@ import Stats from "./Stats";
 import Testimonials from "./Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BookingForm from "./BookingForm";
 
 const Home = () => {
   useEffect(() => {
@@ -38,6 +39,8 @@ const Home = () => {
       <div data-aos="fade-left">
         <FeaturedShots />
       </div>
+
+      <BookingForm></BookingForm>
 
       {/* Testimonials */}
       <div data-aos="fade-up" data-aos-delay="200">
