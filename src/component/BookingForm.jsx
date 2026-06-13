@@ -3,115 +3,111 @@ import AOS from "aos";
 
 const BookingForm = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1200, once: true });
   }, []);
 
   return (
-    <div className="min-h-screen bg-base-200 flex items-center justify-center px-4 py-10">
-      
-      <div
-        className="card w-full max-w-4xl bg-base-100 shadow-2xl"
-        data-aos="zoom-in"
-      >
-        <div className="card-body">
+    <div className="min-h-screen bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-black flex items-center justify-center px-4 py-12">
 
-          {/* Header */}
-          <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold">
-              📸 Photography Booking
-            </h2>
-            <p className="text-gray-500">
-              Fill the form to book your session
-            </p>
+      <div
+        className="w-full max-w-4xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-6 md:p-10"
+        data-aos="fade-up"
+      >
+
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            📸 Book Your Session
+          </h2>
+          <p className="text-gray-300 mt-2">
+            Let’s capture your special moments beautifully
+          </p>
+        </div>
+
+        {/* Form */}
+        <form className="space-y-6">
+
+          {/* Name */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="First Name *"
+              className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20 focus:border-primary focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Last Name *"
+              className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+            />
           </div>
 
-          <form className="space-y-5">
+          {/* Phone */}
+          <input
+            type="text"
+            placeholder="Phone Number *"
+            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+          />
 
-            {/* Name */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="First Name *"
-                className="input input-bordered w-full"
-              />
-              <input
-                type="text"
-                placeholder="Last Name *"
-                className="input input-bordered w-full"
-              />
-            </div>
+          {/* Email */}
+          <input
+            type="email"
+            placeholder="Email Address *"
+            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+          />
 
-            {/* Phone */}
+          {/* Social */}
+          <input
+            type="text"
+            placeholder="Instagram / Facebook (optional)"
+            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+          />
+
+          {/* Address */}
+          <div>
             <input
               type="text"
-              placeholder="Phone Number *"
-              className="input input-bordered w-full"
+              placeholder="Street Address *"
+              className="input input-bordered w-full mb-3 bg-white/20 text-white placeholder-gray-300 border-white/20"
             />
 
-            {/* Email */}
-            <input
-              type="email"
-              placeholder="Email Address *"
-              className="input input-bordered w-full"
-            />
-
-            {/* Social */}
-            <input
-              type="text"
-              placeholder="Facebook / Instagram (optional)"
-              className="input input-bordered w-full"
-            />
-
-            {/* Address */}
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <input
                 type="text"
-                placeholder="Street Address *"
-                className="input input-bordered w-full mb-3"
+                placeholder="City"
+                className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
               />
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <input
-                  type="text"
-                  placeholder="City"
-                  className="input input-bordered w-full"
-                />
-                <input
-                  type="text"
-                  placeholder="State"
-                  className="input input-bordered w-full"
-                />
-                <input
-                  type="text"
-                  placeholder="Zip Code"
-                  className="input input-bordered w-full"
-                />
-              </div>
-            </div>
-
-            {/* Date */}
-            <div>
-              <label className="label">
-                <span className="label-text font-semibold">
-                  Session Date *
-                </span>
-              </label>
               <input
-                type="date"
-                className="input input-bordered w-full md:w-1/2"
+                type="text"
+                placeholder="State"
+                className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+              />
+              <input
+                type="text"
+                placeholder="Zip Code"
+                className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
               />
             </div>
+          </div>
 
-            {/* Button */}
-            <div className="pt-4">
-              <button className="btn btn-primary w-full text-lg">
-                🚀 Book Now
-              </button>
-            </div>
+          {/* Date */}
+          <div>
+            <label className="text-white font-semibold mb-2 block">
+              Session Date *
+            </label>
+            <input
+              type="date"
+              className="input input-bordered w-full md:w-1/2 bg-white/20 text-white border-white/20"
+            />
+          </div>
 
-          </form>
+          {/* Button */}
+          <div className="pt-6">
+            <button className="btn w-full text-lg font-semibold border-none bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:scale-105 transition-all duration-300 text-white shadow-lg">
+              🚀 Confirm Booking
+            </button>
+          </div>
 
-        </div>
+        </form>
       </div>
     </div>
   );
