@@ -8,6 +8,7 @@ import Portfolio from "../component/Portfolio";
 import Wedding from "../component/Wedding";
 import Portrait from "../component/Portrait";
 import Nature from "../component/Nature";
+import BookingForm from "../component/BookingForm";
 
 const router = createBrowserRouter ([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter ([
             {
                 path: '/contact',
                 Component: Contact
+            },
+            {
+                path: '/booking',
+                Component: BookingForm
             },
             {
                 path: '/wedding',

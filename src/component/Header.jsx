@@ -23,7 +23,7 @@ const Header = () => {
               Honest, Raw, Beautiful.
             </p>
 
-        <Link to="/contact">
+        <Link to="/booking">
             <button className="btn btn-primary bg-black text-white rounded-xl px-8 hover:bg-[#333333] transition duration-300" >
               Book a session
             </button>
