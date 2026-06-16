@@ -66,7 +66,7 @@ const Contact = () => {
             className="
               btn w-full rounded-full
               bg-black text-white border-none
-              hover:bg-neutral hover:scale-105
+               hover:scale-105
               transition-all duration-300
             "
           >

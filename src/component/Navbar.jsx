@@ -32,6 +32,7 @@ const Navbar = () => {
             <NavLink to="/about" className={navClass}>About</NavLink>
             <NavLink to="/portfolio" className={navClass}>Portfolio</NavLink>
             <NavLink to="/blog" className={navClass}>Blog</NavLink>
+            <NavLink to="/booking" className={navClass}>Booking</NavLink>
             <NavLink to="/contact" className={navClass}>Contact</NavLink>
           </div>
 
@@ -61,6 +62,8 @@ const Navbar = () => {
           <NavLink to="/portfolio" className={mobileNavClass} onClick={() => setIsOpen(false)}>Portfolio</NavLink>
           <br />
           <NavLink to="/blog" className={mobileNavClass} onClick={() => setIsOpen(false)}>Blog</NavLink>
+          <br />
+          <NavLink to="/booking" className={mobileNavClass} onClick={() => setIsOpen(false)}>Booking</NavLink>
           <br />
           <NavLink to="/contact" className={mobileNavClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
 

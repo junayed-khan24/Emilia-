@@ -7,7 +7,7 @@ const BookingForm = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-black flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen text-black to-black flex items-center justify-center px-4 py-12">
 
       <div
         className="w-full max-w-4xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-6 md:p-10"
@@ -16,10 +16,10 @@ const BookingForm = () => {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">
             📸 Book Your Session
           </h2>
-          <p className="text-gray-300 mt-2">
+          <p className="text-black mt-2">
             Let’s capture your special moments beautifully
           </p>
         </div>
