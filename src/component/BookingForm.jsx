@@ -32,7 +32,7 @@ const BookingForm = () => {
             <input
               type="text"
               placeholder="First Name *"
-              className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20 focus:border-primary focus:outline-none"
+              className="input input-bordered w-full rounded-xl"
             />
             <input
               type="text"
