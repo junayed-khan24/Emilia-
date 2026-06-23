@@ -37,7 +37,7 @@ const BookingForm = () => {
             <input
               type="text"
               placeholder="Last Name *"
-              className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+              className="input input-bordered w-full rounded-xl"
             />
           </div>
 
@@ -45,46 +45,41 @@ const BookingForm = () => {
           <input
             type="text"
             placeholder="Phone Number *"
-            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+            className="input input-bordered w-full rounded-xl"
           />
 
           {/* Email */}
           <input
             type="email"
             placeholder="Email Address *"
-            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+            className="input input-bordered w-full rounded-xl"
           />
 
-          {/* Social */}
-          <input
-            type="text"
-            placeholder="Instagram / Facebook (optional)"
-            className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
-          />
+        
 
           {/* Address */}
           <div>
             <input
               type="text"
               placeholder="Street Address *"
-              className="input input-bordered w-full mb-3 bg-white/20 text-white placeholder-gray-300 border-white/20"
+              className="input input-bordered w-full mb-3 rounded-xl"
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <input
                 type="text"
                 placeholder="City"
-                className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+                className="input input-bordered w-full rounded-xl"
               />
               <input
                 type="text"
                 placeholder="State"
-                className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+                className="input input-bordered w-full rounded-xl"
               />
               <input
                 type="text"
                 placeholder="Zip Code"
-                className="input input-bordered w-full bg-white/20 text-white placeholder-gray-300 border-white/20"
+                className="input input-bordered w-full rounded-xl"
               />
             </div>
           </div>
@@ -96,13 +91,13 @@ const BookingForm = () => {
             </label>
             <input
               type="date"
-              className="input input-bordered w-full md:w-1/2 bg-white/20 text-white border-white/20"
+              className="input input-bordered w-full md:w-1/2 rounded-xl"
             />
           </div>
 
           {/* Button */}
           <div className="pt-6">
-            <button className="btn w-full text-lg font-semibold border-none bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:scale-105 transition-all duration-300 text-white shadow-lg">
+            <button className="btn w-full text-lg font-semibold border-none hover:scale-105 transition-all duration-300 bg-black text-white shadow-lg">
               🚀 Confirm Booking
             </button>
           </div>
